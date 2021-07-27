@@ -13,7 +13,7 @@ public class Ball extends GameObject {
 	int[] posOrNeg = { -1, 1 };
 
 	Ball(int x, int y, int width, int height) {
-		super(x, y, width, height);
+		super(x-width/2, y-height/2, width, height);
 		speedx = posOrNeg[ran.nextInt(2)] * (ran.nextInt(3) + 5);
 		speedy = posOrNeg[ran.nextInt(2)] * (ran.nextInt(3) + 5);
 		loadImage("ball.PNG");

@@ -9,7 +9,7 @@ public class Board extends GameObject {
 	BufferedImage image;
 
 	Board(int x, int y, int width, int height) {
-		super(x, y, width, height);
+		super(x-width/2, y, width, height);
 		speed = 10;
 		loadImage("board.PNG");
 	}

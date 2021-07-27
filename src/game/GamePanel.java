@@ -24,7 +24,7 @@ public class GamePanel extends JPanel implements MouseMotionListener, ActionList
 	}
 
 	void checkCollision() {
-		if (ball.x < 0 || ball.x > 500) {
+		if (ball.x < 0 || ball.x > 500-ball.width) {
 			ball.speedx = -ball.speedx;
 		}
 		if (ball.y < 0) {
