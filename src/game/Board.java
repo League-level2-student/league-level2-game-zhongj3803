@@ -16,14 +16,11 @@ public class Board extends GameObject {
 
 	void left() {
 		x -= speed;
-		collisionBox.setBounds(x, y, width, height);
 	}
 
 	void right() {
 		x += speed;
-		collisionBox.setBounds(x, y, width, height);
 	}
-
 	void loadImage(String imageFile) {
 		try {
 			image = ImageIO.read(this.getClass().getResourceAsStream(imageFile));

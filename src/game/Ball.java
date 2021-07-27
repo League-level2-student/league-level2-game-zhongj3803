@@ -14,8 +14,8 @@ public class Ball extends GameObject {
 
 	Ball(int x, int y, int width, int height) {
 		super(x, y, width, height);
-		speedx = posOrNeg[ran.nextInt(2)] * (ran.nextInt(5) + 1);
-		speedy = posOrNeg[ran.nextInt(2)] * (ran.nextInt(5) + 1);
+		speedx = posOrNeg[ran.nextInt(2)] * (ran.nextInt(3) + 5);
+		speedy = posOrNeg[ran.nextInt(2)] * (ran.nextInt(3) + 5);
 		loadImage("ball.PNG");
 
 	}
@@ -23,7 +23,7 @@ public class Ball extends GameObject {
 	void update() {
 		x += speedx;
 		y += speedy;
-		collisionBox.setBounds(x, y, width, height);
+		super.update();
 	}
 
 	void loadImage(String imageFile) {
