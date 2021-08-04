@@ -65,7 +65,7 @@ public class GamePanel extends JPanel implements MouseMotionListener, ActionList
 	@Override
 	public void mouseMoved(MouseEvent e) {
 		// TODO Auto-generated method stub
-		board.x = e.getX();
+		board.x = e.getX()-board.width/2;
 	}
 
 	@Override
